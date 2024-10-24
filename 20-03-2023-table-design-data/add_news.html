@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!------custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!------------fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!---------Bootstrap icon link----------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--------google font family link---------------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>NEWS</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-  right_border">
+        <nav class=" navbar navbar-expand-lg ">
+          <div class="logo logo_img">
+            <img src="images/logo.svg" class="img-fluid">
+          </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbar">
+        <div class="menu_side">
+          <!--- -------- aside bar html start here-------------->
+          <div class="aside_content">
+            <!-- <a href="index.html" class="active">
+              <img src="images/news-white.svg">News</a>
+            <a href="categories.html">
+              <img src="images/category.svg"> Categories</a>
+            <a href="speaker.html">
+              <img src="images/mic (1).svg"> Speakers</a>
+            <a href="adverstics.html">
+              <img src="images/advertisement (2).svg"> Advertiesments</a>
+            <a href="user.html">
+              <img src="images/users (1).svg"> Users</a> -->
+            
+              <ul class="news_active ">
+                <li class="active_tab">
+                  <a href="index.html"class="active">
+                    <img class="white_img" src="images/news-white.svg">
+                    <img class="blue_img"  src="images/news (1).svg"><span>News</span></a>
+                  </li>
+                <li> 
+                  <a href="categories.html">
+                    <img class="white_img" src="images/category-white (1).svg">
+                    <img class="blue_img"  src="images/category.svg"> <span> Categories</span></a>
+                  </li>
+                <li> 
+                  <a href="speaker.html">
+                    <img class="white_img" src="images/mic-white.svg">
+                    <img class="blue_img"  src="images/mic (1).svg"> <span> Speakers</span></a>
+                  </li>
+                <li> 
+                  <a href="adverstics.html">
+                    <img class="white_img" src="images/advertisement-white.svg">
+                     <img class="blue_img"  src="images/advertisement (2).svg"><span>Advertiesments</span></a>
+                    </li>
+                <li> 
+                  <a href="user.html">
+                    <img class="white_img" src="images/users-white.svg"> 
+                    <img class="blue_img"  src="images/users.svg"><span> Users</span></a>
+                  </li>
+              </ul>
+    
+          </div>
+
+        <div class="border_div ">
+            <a href="small.html" class="person_circle admin">
+              <img src="images/user.svg"><span>Admin@kolbelz.com</span></a>
+            <!-- <a href="collapse.html" class="arrow_left">
+  
+              <img src="images/collapse (2).svg">Collapse</a> -->
+            <a href="#" id="collapse_btn" class="arrow_left collaspe_admin">
+              <img src="images/collapse (2).svg"><span>Collapse</span></a>
+          </div>
+        </div>
+ 
+          </div>
+        </nav>
+      </div>
+      <!--- -------- aside bar html end  here---------->
+      <!--- -------- news html start  here------------->
+      <div class="col-md mt-4">
+        <div class="back_btn">
+          <img src="images/Back.svg">
+          <a href="index.html">Back</a>
+        </div>
+        <div class="newsclass add_news">
+          <h1> Add News</h1>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item border_show" >
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button primary " type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="basic_info">
+                  <div class="info_number">
+                    <h6>Step 1 of 3</h6>
+                  </div>
+                  <div class="info">
+                    Basic Info
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Title<span class="title_span">(English)</span> </label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter title">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Title <span class="title_span">(Yiddish)</span> </label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter title">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Title <span class="title_span">(Hebrew)</span> </label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter title">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Sub Title <span  class="title_span">(English)</span> </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter sub title"
+                        style="height: 120px; resize: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Sub Title <span class="title_span">(Yiddish)</span> </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter sub title"  style="height: 120px; resize: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Sub Title <span class="title_span">(Hebrew)</span> </label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter sub title" style="height: 120px; resize: none;"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="news_icons">
+                  <a href="#"><img src="images/text.svg"></a>
+                  <a href="#"><img src="images/Attach.svg"></a>
+                  <a href="#"><img src="images/Link.svg"></a>
+                  <a href="#"><img src="images/Chart.svg"></a>
+                  <a href="#"><img src="images/Help.svg"></a>
+                  <a href="#"><img src="images/code.svg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="basic_info">
+                  <div class="info_number">
+                    <h6>Step 2 of 3</h6>
+                  </div>
+                  <div class="info">
+                    Categories/Settings
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="col-md-6">
+                  <h5>Categories</h5>
+                  <div class="category_dropdown_outer">
+                    <button class="btn-secondary dropdown-toggle category_dorpdown" type="button" id="selectCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select a Category
+                    </button>
+                    <ul class="dropdown-menu select_menu dropdown_title" aria-labelledby="selectCategory"  aria-labelledby="dLabel" style=" display: none">
+                      <li class="category_item exploreSubMenu sub-menu-item ">
+                        <a href="#" class="sub-menu-item ">Health</a>
+                        <ul class="close_explore" style="display: none;">
+                          <li><a class="category_item_sub" href="#">Health</a></li>
+                          <li><a class="category_item_sub" href="#">Lorem ipsum</a></li>
+                          <li><a class="category_item_sub" href="#">Etiam sit amet</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="category_item sub-menu-item" href="#">Lorem ipsum</a></li>
+                      <li><a class="category_item sub-menu-item" href="#">Etiam sit amet</a></li>
+                      <li><a class="category_item sub-menu-item" href="#">Nunc vestibulum</a></li>
+                      <li><a class="category_item sub-menu-item" href="#">Nunc vestibulum</a></li>
+                      <li><a class="category_item sub-menu-item" href="#">Nunc vestibulum</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="Category_tag">
+                  <h4>Tags</h4>
+                  <div class="Category_box">
+                    <div class="speaker_checkbox">
+                      <input type="checkbox" id="speacker8" name="vehicle1">
+                      <label for="speacker8" class="alret_label">Alert </label>
+                    </div>
+                    <div class="Category_box">
+                      <div class="speaker_checkbox">
+                        <input type="checkbox" id="speacker2" name="vehicle1">
+                        <label for="speacker2" class="alret_label"> Emergency Post</label>
+                      </div>
+                      <div class="Category_box">
+                        <div class="speaker_checkbox">
+                          <input type="checkbox" id="speacker5" name="vehicle1">
+                          <label for="speacker5" class="alret_label">Editor Pick </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Category_tag">
+                  <h4>Placement</h4>
+                  <div class="Category_box">
+                    <div class="speaker_checkbox">
+                      <input type="radio" id="speacker9" name="vehicle1">
+                      <label for="speacker9" class="alret_label">Banner news </label>
+                    </div>
+                    <div class="Category_box">
+                      <div class="speaker_checkbox">
+                        <input type="radio" id="speacker4" name="vehicle1">
+                        <label for="speacker4" class="alret_label">Sidebar news</label>
+                      </div>
+                      <div class="Category_box">
+                        <div class="speaker_checkbox">
+                          <input type="radio" id="speacker3" name="vehicle1">
+                          <label for="speacker3" class="alret_label">List view footer </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_group">
+                      <label for="exampleFormControlInput1" class="form-label">OR Xchange File # </label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter OR Xchange file #">
+                    </div>
+                    <div class="date">
+                      <h6>Set date and time</h6>
+                      <div class="date-time">
+                        <div class="row">
+                          <div class="col-lg-6" style="padding-right: 30px;">
+                            <div class="selection">
+                              <input type="text" id="datepicker" class="form-control" placeholder="Select Date">
+                              <img src="images/Vector (2).svg" alt='' class="datepicker_icon">
+                              <!-- <input placeholder="Select date" type="date" id="example" class="form-control">   -->
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="selection">
+                              <!-- <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" /> -->
+                              <input placeholder="Select date" type="time" id="example" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed  primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="basic_info">
+                  <div class="info_number">
+                    <h6>Step 3 of 3<span>(Optional)</span></h6>
+                  </div>
+                  <div class="info">
+                    Media
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="autio_section">
+                  <div class="upload_images">
+                    <input type="file" id="images_click" style="display:none;">
+                    <h6>Audio File</h6>
+                    <label for="images_click">
+                      <div class="choose">
+                        <img src="images/file_upload.svg" alt="">
+                        <span>Choose file </span>
+                      </div>
+                      <span class="file-name">No file Selected</span>
+                    </label>
+                  </div>
+                  <div class="col-md-4 mt-4">
+                    <h5>Speaker</h5>
+                    <div class="category_dropdown_outer">
+                      <button class="btn-secondary dropdown-toggle category_dorpdown" type="button" id="selectCategory">
+                        Select a Category
+                      </button>
+                      <ul class="dropdown-menu select_menu dropdown_title" aria-labelledby="selectCategory" style="display: none;">
+                        <li class="category_item exploreSubMenu ">
+                          <a href="#" class="sub-menu-item ">Health</a>
+                          <ul class="close_explore" style="display: none;">
+                            <li><a class="category_item_sub" href="#">Health</a></li>
+                            <li><a class="category_item_sub" href="#">Lorem ipsum</a></li>
+                            <li><a class="category_item_sub" href="#">Etiam sit amet</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="category_item" href="#">Lorem ipsum</a></li>
+                        <li><a class="category_item" href="#">Etiam sit amet</a></li>
+                        <li><a class="category_item" href="#">Nunc vestibulum</a></li>
+                        <li><a class="category_item" href="#">Nunc vestibulum</a></li>
+                        <li><a class="category_item" href="#">Nunc vestibulum</a></li>
+                      </ul>
+                    </div>
+                    <!-- <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle first" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Enter Speaker
+                      </button>
+                      <ul class="dropdown-menu" style="width:100%;" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">By Category</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem ipsum </a></li>
+                        <li><a class="dropdown-item" href="#">Etiam sit amet</a></li>
+                        <li><a class="dropdown-item" href="#">Cras sagittis</a></li>
+                        <li><a class="dropdown-item" href="#">Etiam sit amet</a></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                  <div class="attach_images_upload">
+                    <!--<input type="file" id="attach_images" style="display: none;" onchange="readURL(this);" >-->
+                    <h6>Attach Image(s)</h6>
+                    <input type="file" id="files" name="files[]" style="display: none" multiple />
+                    <label for="files">
+                      <div class="img">
+                        <img src="images/add.svg" alt="" id="blah">
+                      </div>
+                      <div class="Add">
+                        <div class="img">
+                          <img src="images/add.svg" alt="">
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <a href="#" class="btn_publish">Publish</a>
+        </div>
+      </div>
+      <!--- -------- news html end here-------------->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="code.jquery.com/jquery-latest.js"></script>
+  <script>
+    //------------selectCategory js-------------------//
+    $(document).ready(function () {
+      $(".exploreSubMenu").click(function () {
+        $(".close_explore").slideToggle("slow");
+      });
+    });
+
+    $(document).on("click", ".category_item", function () {
+      $(".close_explore").show();
+    })
+
+    $(document).on("click", ".category_dorpdown", function () {
+      $(".select_menu").slideToggle();
+    })
+    //--------- select categeries js ----------//
+    //--------- Date js  start here-----//
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+    $(document).ready(function () {
+      $(".datepicker_icon").click(function () {
+        $("#datepicker").focus();
+      });
+    });
+    //--------- Date js  end here-----//
+    //--------- choose images js  start here-----//
+    $(document).on("change", "#images_click", function () {
+      var filename = $(this)[0].files[0].name;
+      $("span.file-name").text(filename);
+    });
+    //--------- choose images js   here-----//
+
+    $(document).ready(function () {
+      $('.category_item ').click(function () {
+        $('.sub-menu-item ').addClass('exploreSubMenu');
+      });
+      $('.category_item').click(function () {
+        $('.sub-menu-item ').removeClass('bg-red');
+      });
+    });
+    // $('.category_item ').click(function(){
+    //   $('.category_item').addClass('icons_sub_menus');
+    //    });
+
+    //------three tab border show---//
+
+
+    $(document).ready(function () {
+      $('.accordion-button').click(function () {
+        // if (!$(this).hasClass('collapsed')) {
+        if ($(this).closest('.accordion-item').hasClass('border_show')) {
+          $('.accordion-button').closest('.accordion-item').removeClass('border_show');
+        } else {
+          $('.accordion-button').closest('.accordion-item').removeClass('border_show');
+          $(this).closest('.accordion-item').addClass('border_show');
+        }
+        // }
+
+      })
+    })
+
+
+
+    //----attach images----//
+    $(document).ready(function () {
+      if (window.File && window.FileList && window.FileReader) {
+        $("#files").on("change", function (e) {
+          var files = e.target.files,
+            filesLength = files.length;
+          for (var i = 0; i < filesLength; i++) {
+            var f = files[i]
+            var fileReader = new FileReader();
+            fileReader.onload = (function (e) {
+              var file = e.target;
+              $("<span class=\"pip\">" +
+                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                "<span class=\"remove\"><img src='images/Vector (4).svg'></span>" +
+                "</span>").insertAfter("#files");
+              $(".remove").click(function () {
+                $(this).parent(".pip").remove();
+              });
+            });
+            fileReader.readAsDataURL(f);
+          }
+          console.log(files);
+        });
+      } else {
+        alert("Your browser doesn't support to File API")
+      }
+    });
+
+    //----select category-----//
+    $(document).ready(function () {
+      $('.category_dorpdown').click(function () {
+
+        if ($(this).closest('.category_dorpdown').hasClass('select_box')) {
+          $(this).closest('.category_dorpdown').removeClass('select_box');
+        } else {
+          $(this).closest('.category_dorpdown').addClass('select_box');
+        }
+
+      })
+    })
+    //---select category select value--//
+    $('.dropdown-menu  li').on('click', function () {
+      var getValue = $(this).text();
+      $('.category_dorpdown').text(getValue);
+    });
+//-----on collaspe button side bar collapse--//
+    $(document).ready(function () {
+
+$('li').find('.blue_img').show();
+$('.active_tab').find('.white_img').show();
+$('.active_tab').find('.blue_img').hide();
+
+$('#collapse_btn').click(function (e) {
+  e.preventDefault();
+  $(this).find('img').attr('src', function (_, attr) {
+    return attr == 'images/collapse (2).svg' ? 'images/collaspseright.png' : 'images/collapse (2).svg';
+  });
+  $('.news_active').find('span').toggle();
+  $('.news_active').find('.active_tab a').toggleClass('active');
+  $('.border_div').find('span').toggle();
+  $('.right_border').toggleClass('side_collaspse');
+  $('.active_tab').find('.white_img').toggle();
+  $('.active_tab').find('.blue_img').toggle();
+  $('.person_circle').toggleClass('admin');
+  $('.arrow_left').toggleClass('collaspe_admin');
+
+})
+})
+
+  </script>
+</body>
+
+</html>

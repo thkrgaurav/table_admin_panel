@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!------custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!------------fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!---------Bootstrap icon link----------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--------google font family link---------------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>add Speaker</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-  right_border">
+        <nav class=" navbar navbar-expand-lg ">
+          <div class="logo logo_img">
+            <img src="images/logo.svg" class="img-fluid">
+          </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbar">
+        
+        <div class="menu_side">
+         
+          <!--- -------- aside bar html start here-------------->
+          <div class="aside_content">
+            <!-- <a href="index.html" class="active">
+              <img src="images/news-white.svg">News</a>
+            <a href="categories.html">
+              <img src="images/category.svg"> Categories</a>
+            <a href="speaker.html">
+              <img src="images/mic (1).svg"> Speakers</a>
+            <a href="adverstics.html">
+              <img src="images/advertisement (2).svg"> Advertiesments</a>
+            <a href="user.html">
+              <img src="images/users (1).svg"> Users</a> -->
+            
+              <ul class="news_active ">
+                <li><a href="index.html">
+                    <img class="white_img" src="images/news-white.svg"><img class="blue_img"  src="images/news (1).svg"><span>News</span></a></li>
+                <li> <a href="categories.html">
+                    <img class="white_img" src="images/category-white (1).svg"><img class="blue_img"  src="images/category.svg"> <span> Categories</span></a></li>
+                <li class="active_tab"> <a href="speaker.html" class="active">
+                    <img class="white_img" src="images/mic-white.svg"><img class="blue_img"  src="images/mic (1).svg"> <span> Speakers</span></a></li>
+                <li> <a href="adverstics.html">
+                    <img class="white_img" src="images/advertisement-white.svg"> <img class="blue_img"  src="images/advertisement (2).svg"><span>Advertiesments</span></a></li>
+                <li> <a href="user.html">
+                    <img class="white_img" src="images/users-white.svg"> 
+                    <img class="blue_img"  src="images/users.svg"><span> Users</span></a></li>
+              </ul>
+    
+          </div>
+
+        <div class="border_div ">
+            <a href="small.html" class="person_circle admin">
+              <img src="images/user.svg"><span>Admin@kolbelz.com</span></a>
+            <!-- <a href="collapse.html" class="arrow_left">
+  
+              <img src="images/collapse (2).svg">Collapse</a> -->
+            <a href="#" id="collapse_btn" class="arrow_left collaspe_admin">
+              <img src="images/collapse (2).svg"><span>Collapse</span></a>
+          </div>
+        </div>
+ 
+          </div>
+        </nav>
+      </div>
+      <!--- -------- aside bar html end  here---------->
+      <!--- -------- news html start  here------------->
+      <div class="col-md mt-4">
+        <div class="addspeaker">
+        <div class="back_btn">
+          <img src="images/Back.svg">
+          <a href="index.html">Back</a>
+        </div>
+        <div class="newsclass add_news">
+          <h1> Add Speaker</h1>
+          </div>
+        <div class="topbar">
+        <div class="form_head">
+            <div class="speaker_info">
+                <h6>Info</h6>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                   <label for="exampleFormControlInput1" class="form-label">Name </label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Enter name">
+                </div>
+                <div class="col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Status </label>
+                    <div class="category_dropdown_outer add_category">
+                        <button class="btn-secondary dropdown-toggle category_dorpdown add_category_dropdown" type="button" id="selectCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select status
+                        </button>
+                        <ul class="dropdown-menu select_menu dropdown_title dropdown_category speacker_dropdown" aria-labelledby="selectCategory" aria-labelledby="dLabel" style="display: none;">
+                          <li class="category_item exploreSubMenu sub-menu-item ">
+                            <a href="#" class="sub-menu-item ">active</a>
+                           </li>
+                         <li><a class="category_item sub-menu-item" href="#">Disable</a></li>
+                    
+                        </ul>
+                      </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Title</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Enter title">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Sort Order</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Enter sort order">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"> Sort Site Order</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Enter sort site order">
+                    </div>
+                  </div>
+              </div>
+           <div class="select_mark">
+              <div class="speaker_checkbox">
+                <input type="checkbox" id="speacker" name="vehicle1">
+                 <label for="speacker"> </label>
+            </div>
+            <h6>Mark as featured</h6>
+        </div>
+          </div>
+           
+      
+        </div>
+        
+    </div>
+    <div class="button">
+        <a href="#" class="btn_publish">Save</a>
+      </div>
+      </div>
+     
+      <!--- -------- news html end here-------------->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="code.jquery.com/jquery-latest.js"></script>
+  <script>
+    //------------selectCategory js-------------------//
+    $(document).ready(function () {
+      $(".exploreSubMenu").click(function () {
+        $(".close_explore").slideToggle("slow");
+      });
+    });
+
+    $(document).on("click", ".category_item", function () {
+      $(".close_explore").show();
+    })
+
+    $(document).on("click", ".category_dorpdown", function () {
+      $(".select_menu").slideToggle();
+    })
+    //--------- select categeries js ----------//
+    //--------- Date js  start here-----//
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+    $(document).ready(function () {
+      $(".datepicker_icon").click(function () {
+        $("#datepicker").focus();
+      });
+    });
+    //--------- Date js  end here-----//
+    //--------- choose images js  start here-----//
+    $(document).on("change", "#images_click", function () {
+      var filename = $(this)[0].files[0].name;
+      $("span.file-name").text(filename);
+    });
+    //--------- choose images js   here-----//
+
+    $(document).ready(function () {
+      $('.category_item ').click(function () {
+        $('.sub-menu-item ').addClass('exploreSubMenu');
+      });
+      $('.category_item').click(function () {
+        $('.sub-menu-item ').removeClass('bg-red');
+      });
+    });
+    // $('.category_item ').click(function(){
+    //   $('.category_item').addClass('icons_sub_menus');
+    //    });
+
+//------three tab border show---//
+    $(document).ready(function () {
+      $('.accordion-button').click(function () {
+        // if (!$(this).hasClass('collapsed')) {
+          if ($(this).closest('.accordion-item').hasClass('border_show')) {
+            $('.accordion-button').closest('.accordion-item').removeClass('border_show');
+          } else {
+            $('.accordion-button').closest('.accordion-item').removeClass('border_show');
+            $(this).closest('.accordion-item').addClass('border_show');
+          }
+        // }
+
+      })
+    })
+
+//----attach images----//
+    $(document).ready(function () {
+      if (window.File && window.FileList && window.FileReader) {
+        $("#files").on("change", function (e) {
+          var files = e.target.files,
+            filesLength = files.length;
+          for (var i = 0; i < filesLength; i++) {
+            var f = files[i]
+            var fileReader = new FileReader();
+            fileReader.onload = (function (e) {
+              var file = e.target;
+              $("<span class=\"pip\">" +
+                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                "<span class=\"remove\"><img src='images/Vector (4).svg'></span>" +
+                "</span>").insertAfter("#files");
+              $(".remove").click(function () {
+                $(this).parent(".pip").remove();
+              });
+            });
+            fileReader.readAsDataURL(f);
+          }
+          console.log(files);
+        });
+      } else {
+        alert("Your browser doesn't support to File API")
+      }
+    });
+
+//----select category-----//
+    $(document).ready(function(){
+  $('.category_dorpdown').click(function(){
+
+    if($(this).closest('.category_dorpdown').hasClass('select_box')){
+      $(this).closest('.category_dorpdown').removeClass('select_box');
+    }else{
+      $(this).closest('.category_dorpdown').addClass('select_box');
+    }
+
+  })
+}) 
+//---select category select value--//
+$('.dropdown-menu  li').on('click', function() {
+  var getValue = $(this).text();
+  $('.category_dorpdown').text(getValue);
+});
+//-----on collaspe button side bar collapse--//
+$(document).ready(function () {
+
+$('li').find('.blue_img').show();
+$('.active_tab').find('.white_img').show();
+$('.active_tab').find('.blue_img').hide();
+
+$('#collapse_btn').click(function (e) {
+  e.preventDefault();
+  $(this).find('img').attr('src', function (_, attr) {
+    return attr == 'images/collapse (2).svg' ? 'images/collaspseright.png' : 'images/collapse (2).svg';
+  });
+  $('.news_active').find('span').toggle();
+  $('.news_active').find('.active_tab a').toggleClass('active');
+  $('.border_div').find('span').toggle();
+  $('.right_border').toggleClass('side_collaspse');
+  $('.active_tab').find('.white_img').toggle();
+  $('.active_tab').find('.blue_img').toggle();
+  $('.person_circle').toggleClass('admin');
+  $('.arrow_left').toggleClass('collaspe_admin');
+
+})
+})
+
+  </script>
+</body>
+
+</html>
